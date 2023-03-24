@@ -6,7 +6,7 @@ La reconnaissance et l'identification faciales sont des aspects essentiels de la
 
 ## Dataset 
 
-Un ensemble de données de 133 783 visages masqués (MaskedFace-Net), formaté à son tour pour fonctionner avec un ensemble de données de 70 000 visages (FFHQ), a été utilisé. L'ensemble de données de visages masqués contient des masques artificiels superposés aux visages, au lieu de véritables images de masques. Afin de transférer les fichiers et d'accélérer l'entrainement, un sous-ensemble de 2 000 images d'apprentissage et de 1 000 images de test a été utilisé à partir de chacun de ces grands ensembles de données.
+Un ensemble de données de 67 193 visages masqués (MaskedFace-Net), formaté à son tour pour fonctionner avec un ensemble de données de 70 000 visages (FFHQ), a été utilisé. L'ensemble de données de visages masqués contient des masques artificiels superposés aux visages, au lieu de véritables images de masques. Afin de transférer les fichiers et d'accélérer l'entrainement, un sous-ensemble de 2 000 images d'apprentissage et de 1 000 images de test a été utilisé à partir de chacun de ces grands ensembles de données.
 
 ## CycleGAN
 
