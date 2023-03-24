@@ -87,8 +87,8 @@ def preprocess_image(image, label):
 
 st.title("Importer votre image")
 uploaded_file = st.file_uploader("Choisissez une image", type=["jpg", "jpeg", "png"])
-unmasked_path = "C:/Users/louva/OneDrive/Documents/Cours/M2 SDTS/Deep_learning/PROJET_GAN/unmasked/test"
-masked_path = "C:/Users/louva/OneDrive/Documents/Cours/M2 SDTS/Deep_learning/PROJET_GAN/masked/test"
+unmasked_path = "unmasked/test"
+masked_path = "masked/test"
 
 if uploaded_file is not None:
 
