@@ -240,10 +240,10 @@ if __name__ == "__main__":
 
     # CHARGEMENT DES IMAGES
 
-    train_unmasked_path = "C:/Users/etudiant/Documents/PROJET_GAN/train/unmasked"
-    test_unmasked_path = "C:/Users/etudiant/Documents/PROJET_GAN/test/unmasked"
-    train_masked_path = "C:/Users/etudiant/Documents/PROJET_GAN/train/masked"
-    test_masked_path = "C:/Users/etudiant/Documents/PROJET_GAN/test/masked"
+    train_unmasked_path = "train/unmasked"
+    test_unmasked_path = "test/unmasked"
+    train_masked_path = "train/masked"
+    test_masked_path = "test/masked"
 
     train_unmasked_files = tf.data.Dataset.list_files(os.path.join(train_unmasked_path, '*.png'))
     test_unmasked_files = tf.data.Dataset.list_files(os.path.join(test_unmasked_path, '*.png'))
@@ -392,7 +392,7 @@ if __name__ == "__main__":
         if (epoch + 1) % 5 == 0:
             ckpt_save_path = ckpt_manager.save()
             generator_g.save(f"models/model_UtoM_{epoch + 1}")
-            generator_f.save(f"models/model_MtoH_{epoch + 1}")
+            generator_f.save(f"models/model_MtoU_{epoch + 1}")
             print("Sauvegarde du checkpoint pour l'epoch {} à {}".format(epoch + 1, ckpt_save_path))
 
         print("Le temps nécessaire pour l'epoch {} est de {}sec\n".format(epoch + 1, time.time() - start))
